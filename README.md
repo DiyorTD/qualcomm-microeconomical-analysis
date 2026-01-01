@@ -6,68 +6,89 @@
 **Date:** December 2025
 
 ## 📄 Project Overview
-[cite_start]This project evaluates the economic validity of the argument presented by Carl Shapiro and Keith Waehrer regarding Qualcomm's "no-license/no-chips" policy[cite: 10, 11]. [cite_start]The central research question is whether a formally "chip-neutral" royalty functions as an economically meaningful tax that raises rivals' costs and distorts competition[cite: 12].
 
-[cite_start]Using a stylized vertical model of licensing and upstream competition, this paper demonstrates that a uniform downstream royalty imposed by a vertically integrated Standard-Essential Patent (SEP) holder acts as a tax[cite: 13, 14]. [cite_start]This mechanism raises the effective marginal costs of rival chip suppliers, even without explicit exclusionary contracts[cite: 14].
+This project evaluates the economic validity of the argument presented by Carl Shapiro and Keith Waehrer regarding Qualcomm's "no-license/no-chips" policy. The central research question is whether a formally "chip-neutral" royalty functions as an economically meaningful tax that raises rivals' costs and distorts competition.
+
+Using a stylized vertical model of licensing and upstream competition, this paper demonstrates that a uniform downstream royalty imposed by a vertically integrated Standard-Essential Patent (SEP) holder acts as a tax. This mechanism raises the effective marginal costs of rival chip suppliers, even without explicit exclusionary contracts.
 
 ## ⚙️ Model Specification
+
 The paper develops a formal vertical model to analyze the interaction between licensing and upstream competition.
 
 ### 1. Demand Function
+
 Handset demand is modeled as a function of chip quality ($q_i$) and retail price ($P$). If the OEM uses chip supplier $i \in \{Q, R\}$:
 
-$$Q_{i}(P) = a + \theta q_{i} - bP$$
+$$
+Q_{i}(P) = a + \theta q_{i} - bP
+$$
 
-* [cite_start]$a, b > 0$: Demand parameters [cite: 52]
-* [cite_start]$\theta$: Marginal valuation of performance [cite: 52]
-* [cite_start]$q_i$: Quality index of chip $i$ [cite: 52]
+* $a, b > 0$: Demand parameters
+* $\theta$: Marginal valuation of performance
+* $q_i$: Quality index of chip $i$
 
 ### 2. Marginal Cost & Licensing
+
 Under the "no-license/no-chips" regime, the OEM pays a royalty $r$ on all devices, regardless of the chip supplier. The OEM's marginal cost is:
 
-$$MC_{i} = c_{O} + w_{i} + r$$
+$$
+MC_{i} = c_{O} + w_{i} + r
+$$
 
-* [cite_start]$c_O$: OEM's non-chip production cost [cite: 55]
-* [cite_start]$w_i$: Wholesale chip price from supplier $i$ [cite: 59]
-* [cite_start]$r$: Per-device royalty [cite: 61]
+* $c_O$: OEM's non-chip production cost
+* $w_i$: Wholesale chip price from supplier $i$
+* $r$: Per-device royalty
 
 ### 3. OEM Profit Maximization
+
 The OEM chooses a supplier and retail price to maximize operating profit:
 
-$$\max_{P} \pi_{O} = (P - MC_{i})(a + \theta q_{i} - bP)$$
+$$
+\max_{P} \pi_{O} = (P - MC_{i})(a + \theta q_{i} - bP)
+$$
 
-[cite_start]Solving for the optimal retail price ($P^*$) yields the equilibrium OEM profit for a given supplier[cite: 141, 142]:
+Solving for the optimal retail price ($P^*$) yields the equilibrium OEM profit for a given supplier:
 
-$$\pi_{O}(i;r) = \frac{(a + \theta q_{i} - b(c_{O} + w_{i} + r))^{2}}{4b}$$
+$$
+\pi_{O}(i;r) = \frac{(a + \theta q_{i} - b(c_{O} + w_{i} + r))^{2}}{4b}
+$$
 
 ### 4. Upstream Supplier Profits
+
 The distortion arises from the asymmetric profit functions of the suppliers.
 
 **Qualcomm (Integrated Firm):**
 Qualcomm collects both chip revenue and royalty revenue. It internalizes the royalty, allowing it to lower $w_Q$ to offset $r$:
 
-$$\Pi_{Q} = (w_{Q} - c_{Q})Q_{Q}^{*} + rQ_{Q}^{*}$$
+$$
+\Pi_{Q} = (w_{Q} - c_{Q})Q_{Q}^{\ast} + rQ_{Q}^{\ast}
+$$
 
 **Rival Supplier:**
 The rival earns only chip margins and cannot offset the royalty burden:
 
-$$\Pi_{R} = (w_{R} - c_{R})Q_{R}^{*}$$
+$$
+\Pi_{R} = (w_{R} - c_{R})Q_{R}^{\ast}
+$$
 
-* [cite_start]$c_Q, c_R$: Suppliers' marginal production costs [cite: 155-157]
+* $c_Q, c_R$: Suppliers' marginal production costs
 
 ## 📊 Methodology & Data
-* [cite_start]**Theoretical Framework:** The model proves that because Qualcomm internalizes royalty revenue, it creates an incentive to lower wholesale prices that rivals cannot match, effectively taxing rival chips [cite: 164-167].
-* [cite_start]**Surplus Accounting:** Demonstrates how royalty surcharges reduce gains from trade specifically for rival-OEM pairs[cite: 381].
+
+* **Theoretical Framework:** The model proves that because Qualcomm internalizes royalty revenue, it creates an incentive to lower wholesale prices that rivals cannot match, effectively taxing rival chips.
+* **Surplus Accounting:** Demonstrates how royalty surcharges reduce gains from trade specifically for rival-OEM pairs.
 * **Empirical Illustration:**
-    * [cite_start]**Data Sources:** Qualcomm Form 10-K filings, Counterpoint Research, Strategy Analytics [cite: 247-251].
-    * [cite_start]**Key Trend:** Licensing revenue remained insulated from chip competition shocks, and rival market share gains were restricted to lower-value segments, consistent with the model's "margin compression" prediction[cite: 266, 274].
+    * **Data Sources:** Qualcomm Form 10-K filings, Counterpoint Research, Strategy Analytics.
+    * **Key Trend:** Licensing revenue remained insulated from chip competition shocks, and rival market share gains were restricted to lower-value segments, consistent with the model's "margin compression" prediction.
 
 ## 📝 Key Findings
-1.  **Royalty as Tax:** A per-device royalty functions as a tax on rivals. [cite_start]While formally applied to the OEM, the economic incidence falls on the rival chip supplier through reduced competitiveness[cite: 164, 170].
-2.  [cite_start]**Asymmetric Incentives:** The integrated firm (Qualcomm) can strategically offset the royalty to win sales, while the rival cannot, shifting OEM sourcing incentives in favor of the integrated firm [cite: 166-168].
-3.  [cite_start]**Bargaining Dynamics:** High royalties are sustained not necessarily by innovation value alone, but by the asymmetric "disagreement payoffs" where OEMs fear supply disruption[cite: 200, 221].
+
+1.  **Royalty as Tax:** A per-device royalty functions as a tax on rivals. While formally applied to the OEM, the economic incidence falls on the rival chip supplier through reduced competitiveness.
+2.  **Asymmetric Incentives:** The integrated firm (Qualcomm) can strategically offset the royalty to win sales, while the rival cannot, shifting OEM sourcing incentives in favor of the integrated firm.
+3.  **Bargaining Dynamics:** High royalties are sustained not necessarily by innovation value alone, but by the asymmetric "disagreement payoffs" where OEMs fear supply disruption.
 
 ## 📚 References
-* [cite_start]**Primary Case:** *FTC v. Qualcomm*, Ninth Circuit Court of Appeals & District Court findings[cite: 404, 405].
-* **Core Literature:** Shapiro, C., & Waehrer, K. (2023). [cite_start]"Using and Misusing Microeconomics: FTC v. Qualcomm"[cite: 408].
-* [cite_start]**Financial Data:** Qualcomm Historical Financial Results (Licensing and Chip Segment Information)[cite: 406].
+
+* **Primary Case:** *FTC v. Qualcomm*, Ninth Circuit Court of Appeals & District Court findings.
+* **Core Literature:** Shapiro, C., & Waehrer, K. (2023). "Using and Misusing Microeconomics: FTC v. Qualcomm".
+* **Financial Data:** Qualcomm Historical Financial Results (Licensing and Chip Segment Information).
