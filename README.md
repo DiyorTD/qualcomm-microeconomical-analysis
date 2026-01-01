@@ -1,10 +1,5 @@
 # Qualcomm Licensing Economics: A Theory-Driven Assessment
 
-**Author:** Diyorbek Tulanov  
-**Institution:** Seoul National University, Department of Economics  
-**Course:** Industrial Organization Special Research  
-**Date:** December 2025
-
 ## 📄 Project Overview
 
 This project evaluates the economic validity of the argument presented by Carl Shapiro and Keith Waehrer regarding Qualcomm's "no-license/no-chips" policy. The central research question is whether a formally "chip-neutral" royalty functions as an economically meaningful tax that raises rivals' costs and distorts competition.
@@ -92,3 +87,4 @@ $$
 * **Primary Case:** *FTC v. Qualcomm*, Ninth Circuit Court of Appeals & District Court findings.
 * **Core Literature:** Shapiro, C., & Waehrer, K. (2023). "Using and Misusing Microeconomics: FTC v. Qualcomm".
 * **Financial Data:** Qualcomm Historical Financial Results (Licensing and Chip Segment Information).
+
